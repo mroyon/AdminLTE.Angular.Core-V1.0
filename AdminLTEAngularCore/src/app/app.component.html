@@ -1,0 +1,36 @@
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="assets/images/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <app-header></app-header>
+  <app-menubar></app-menubar>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <app-breadcrumbs></app-breadcrumbs>
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <app-infoboxes></app-infoboxes>
+        <app-reportdata></app-reportdata>
+        <app-statisticsdata></app-statisticsdata>
+        <app-membersstatisticsdata></app-membersstatisticsdata>
+        <app-productorders></app-productorders>
+      </div>
+      <!--/. container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <app-controlsidebar></app-controlsidebar>
+  <!-- /.control-sidebar -->
+
+  <app-footer></app-footer>
+</div>
+<!-- ./wrapper -->
+<router-outlet></router-outlet>
