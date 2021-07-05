@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "preinstall": "npm install -g angular-cli",
-    "postinstall": "ng build && mv dist/* ."
+    "postinstall": "ng build --aot -prod",
+    "heroku-postbuild": "cd src/app && npm install"
   },
   "private": true,
   "dependencies": {
